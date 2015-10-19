@@ -11,7 +11,6 @@ exec { 'apt-get update':
 
 package {
   [
-    'docker',
     'curl',
     'ruby',
     'unzip',
