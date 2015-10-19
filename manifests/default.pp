@@ -22,14 +22,9 @@ package {
   require => Exec['apt-get update'],
 }
 
-service { 'tomcat7':
-  enable => true,
-}
-
 exec { "updatedb":
     command => "updatedb",
     path    => "/usr/bin/",
     require => Exec['apt-get update'],
     #update the mlocate database so that the locate command works
-    #sysproggies love this stuff
 }
