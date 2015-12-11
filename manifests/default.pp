@@ -12,6 +12,7 @@ exec { 'apt-get update':
 package {
   [
     'curl',
+    'daemon',
     'ruby',
     'unzip',
     'maven',
